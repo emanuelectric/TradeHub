@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/textview_Encliclopedia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Encliclopedia"
+        android:textSize="40sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="-50dp" />
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <!-- Agrega un LinearLayout para los botones -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Primer botón con fondo personalizado -->
+        <Button
+            android:id="@+id/button_irSectores"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="         Sectores         "
+            android:backgroundTint="#FFA500"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            app:cornerRadius="30dp"
+            android:textStyle="bold"
+            android:layout_gravity="center" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <Button
+            android:id="@+id/button_irIndicadores"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="      Indicadores      "
+            android:backgroundTint="#FFA500"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:cornerRadius="30dp"
+            android:layout_gravity="center" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <Button
+            android:id="@+id/button_irTendencias"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="       Tendencias       "
+            android:backgroundTint="#FFA500"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            app:cornerRadius="30dp"
+            android:textStyle="bold"
+            android:layout_gravity="center" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <Button
+            android:id="@+id/button_irAgregarElementos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Agregar Elementos"
+            android:backgroundTint="#FFA500"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            app:cornerRadius="30dp"
+            android:textStyle="bold"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+</LinearLayout>

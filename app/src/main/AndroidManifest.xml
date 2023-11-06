@@ -1,0 +1,51 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher_th"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_th"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TradeHub512"
+        tools:targetApi="31">
+
+        <!-- Actividades -->
+
+        <!-- Actividad principal al iniciar -->
+        <activity
+            android:name=".activities.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Inicio -->
+        <activity android:name=".activities.MenuInicialActivity" />
+        <activity android:name=".activities.RegistrarseActivity" />
+        <activity android:name=".activities.IniciarSesionActivity" />
+
+        <activity android:name=".activities.MenuPrincipalActivity" />
+
+        <!-- Menu Principal ... -->
+        <activity android:name=".activities.MenuPublicacionesActivity" />
+        <activity android:name=".activities.MenuEnciclopediaActivity" />
+        <activity android:name=".activities.AcercaDeActivity" />
+
+        <!-- Menu Publicaciones -->
+        <activity android:name=".activities.PublicacionesPublicarActivity" />
+        <activity android:name=".activities.PublicacionesFavoritosActivity" />
+        <activity android:name=".activities.PublicacionesExplorarActivity" />
+        <activity android:name=".activities.PublicacionesFiltrarActivity" />
+
+        <!-- Menu Enciclopedia -->
+
+        <!-- <activity android:name="" /> -->
+
+    </application>
+
+</manifest>

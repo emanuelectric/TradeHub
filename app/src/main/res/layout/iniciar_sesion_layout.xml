@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    android:gravity="center">
+
+    <!-- Agrega una ImageView centrada arriba -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tradehub"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <!-- Agrega un EditText para el nombre de usuario -->
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Nombre de usuario"
+        android:textColorHint="#FFFFFF"
+        android:backgroundTint="#FFA500"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:padding="10dp" />
+
+    <!-- Agrega un espacio entre los campos de texto -->
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <!-- Agrega un EditText para la contraseña -->
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Contraseña"
+        android:textColorHint="#FFFFFF"
+        android:backgroundTint="#FFA500"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:inputType="textPassword" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <!-- Agrega un Button para iniciar sesión -->
+    <Button
+        android:id="@+id/button_iniciar_sesion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Iniciar Sesión"
+        android:backgroundTint="#FFA500"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        app:cornerRadius="30dp"
+        android:textStyle="bold"
+        android:layout_gravity="center" />
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
+    <!-- Texto "¿No tienes una cuenta?" -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿No tienes una cuenta?"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <!-- Botón "Registrarse" -->
+    <Button
+        android:id="@+id/button_irRegistrarse2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  Registrarse  "
+        android:backgroundTint="#FFA500"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:cornerRadius="30dp"
+        android:layout_gravity="center"
+        android:onClick="lanzarVistaRegistrarse"/>
+
+</LinearLayout>

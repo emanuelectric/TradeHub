@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    android:gravity="center">
+
+    <!-- Agrega una ImageView centrada arriba -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tradehub"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+
+    <!-- Agrega un EditText para el nombre de usuario -->
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Nombre de usuario"
+        android:id="@+id/registrarse_nombreUsuario"
+        android:textColorHint="#FFFFFF"
+        android:backgroundTint="#FFA500"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:padding="10dp"
+        />
+
+    <!-- Agrega un EditText para el correo electrónico -->
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Correo electrónico"
+        android:id="@+id/registrarse_correoElectronico"
+        android:textColorHint="#FFFFFF"
+        android:backgroundTint="#FFA500"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="16sp"
+        android:paddingRight="16sp"
+        android:paddingTop="16sp"/>
+
+    <!-- Agrega un EditText para la contraseña -->
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Contraseña"
+        android:id="@+id/registrarse_contrasena"
+        android:textColorHint="#FFFFFF"
+        android:backgroundTint="#FFA500"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:inputType="textPassword" />
+
+    <!-- Agrega un EditText para repetir la contraseña -->
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Repetir Contraseña"
+        android:id="@+id/registrarse_repetirContrasena"
+        android:textColorHint="#FFFFFF"
+        android:backgroundTint="#FFA500"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:inputType="textPassword" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <!-- Botón "Registrarse" -->
+    <Button
+        android:id="@+id/button_registrarse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="#FFA500"
+        android:text="Registrarse"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        app:cornerRadius="30dp"
+        android:textStyle="bold" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="130dp" />
+
+    <!-- Texto "¿No tienes una cuenta?" -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Ya tienes una cuenta?"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <!-- Botón "Iniciar Sesión" -->
+    <Button
+        android:id="@+id/button_irIniciar_sesion2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Iniciar Sesión"
+        android:backgroundTint="#FFA500"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        app:cornerRadius="30dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:onClick="lanzarVistaIniciarSesion"/>
+
+</LinearLayout>
