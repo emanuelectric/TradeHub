@@ -7,6 +7,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 import androidx.annotation.Nullable;
 
 import com.example.tradehub512.datos.SimboloModel;
+import com.example.tradehub512.datos.Usuario;
 
 public class DataBaseHelper extends SQLiteOpenHelper {
 
@@ -15,25 +16,42 @@ public class DataBaseHelper extends SQLiteOpenHelper {
     public static final String NOMBRE_SIMBOLO = "nombre_simbolo";
     public static final String DESCRIPCION_SIMBOLO = "descripcion_simbolo";
     public static final String SIMBOLO = "Simbolo";
+    public static final String NOMBRE_USUARIO = "nombre_usuario";
+    public static final String ID_USUARIO = "id_usuario";
+    public static final String CORREO_ELECTRONICO = "correo_electronico";
+    public static final String CONTRASENA = "contrasena";
+    public static final String ID_PUBLICACION = "id_publicacion";
+    public static final String TITULO_PUBLICACION = "titulo_publicacion";
+    public static final String DESCRIPCION_PUBLICACION = "descripcion_piublicacion";
+    public static final String IMAGEN_PUBLICACION = "imagen_publicacion";
+    public static final String PUBLICACION_FAVORITO = "publicacion_favorito";
+    public static final String ID_INDICADOR = "id_indicador";
+    public static final String ID_TENDENCIA = "id_tendencia";
+    public static final String NOMBRE_TENDENCIA = "nombre_tendencia";
+    public static final String DESCRIPCION_TENDENCIA = "descripcion_tendencia";
+    public static final String NOMBRE_INDICADOR = "nombre_indicador";
+    public static final String DESCRIPCION_DESCRIPCION = "descripcion_descripcion";
+    public static final String USUARIO = "Usuario";
+
 
     public DataBaseHelper(@Nullable Context context) {
-        super(context, "tradehub.db", null, 1);
+        super(context, "TradeHub.db", null, 1);
     }
 
     @Override
     public void onCreate(SQLiteDatabase db) {
         // Declaración SQL para crear la tabla Indicador
         String createTableIndicador = "CREATE TABLE Indicador (" +
-                "id_indicador INTEGER PRIMARY KEY AUTOINCREMENT," +
-                "nombre_indicador VARCHAR NOT NULL," +
-                "descripcion_descripcion VARCHAR NOT NULL" +
+                ID_INDICADOR + " INTEGER PRIMARY KEY AUTOINCREMENT," +
+                NOMBRE_INDICADOR + " VARCHAR NOT NULL," +
+                DESCRIPCION_DESCRIPCION + " VARCHAR NOT NULL" +
                 ");";
 
         // Declaración SQL para crear la tabla Tendencia
         String createTableTendencia = "CREATE TABLE Tendencia (" +
-                "id_tendencia INTEGER PRIMARY KEY AUTOINCREMENT," +
-                "nombre_tendencia VARCHAR NOT NULL," +
-                "descripcion_tendencia VARCHAR NOT NULL" +
+                ID_TENDENCIA + " INTEGER PRIMARY KEY AUTOINCREMENT," +
+                NOMBRE_TENDENCIA + " VARCHAR NOT NULL," +
+                DESCRIPCION_TENDENCIA + " VARCHAR NOT NULL" +
                 ");";
 
         // Declaración SQL para crear la tabla Simbolo
@@ -45,23 +63,23 @@ public class DataBaseHelper extends SQLiteOpenHelper {
                 ");";
 
         // Declaración SQL para crear la tabla Usuario
-        String createTableUsuario = "CREATE TABLE Usuario (" +
-                "id_usuario INTEGER PRIMARY KEY AUTOINCREMENT," +
-                "nombre_usuario VARCHAR NOT NULL," +
-                "correo_electronico VARCHAR NOT NULL," +
-                "contrasena VARCHAR NOT NULL" +
+        String createTableUsuario = "CREATE TABLE " + USUARIO + " (" +
+                ID_USUARIO + " INTEGER PRIMARY KEY AUTOINCREMENT," +
+                NOMBRE_USUARIO + " VARCHAR NOT NULL," +
+                CORREO_ELECTRONICO + " VARCHAR NOT NULL," +
+                CONTRASENA + " VARCHAR NOT NULL" +
                 ");";
 
         // Declaración SQL para crear la tabla Publicacion
         String createTablePublicacion = "CREATE TABLE Publicacion (" +
-                "id_publicacion INTEGER PRIMARY KEY AUTOINCREMENT," +
-                "titulo_publicacion VARCHAR NOT NULL," +
-                "descripcion_piublicacion VARCHAR NOT NULL," +
-                "imagen_publicacion BLOB," +
-                "publicacion_favorito BOOLEAN NOT NULL," +
-                "id_usuario INTEGER NOT NULL," +
-                "id_indicador INTEGER NOT NULL," +
-                "id_tendencia INTEGER NOT NULL," +
+                ID_PUBLICACION + " INTEGER PRIMARY KEY AUTOINCREMENT," +
+                TITULO_PUBLICACION + " VARCHAR NOT NULL," +
+                DESCRIPCION_PUBLICACION + " VARCHAR NOT NULL," +
+                IMAGEN_PUBLICACION + " BLOB," +
+                PUBLICACION_FAVORITO + " BOOLEAN NOT NULL," +
+                ID_USUARIO + " INTEGER NOT NULL," +
+                ID_INDICADOR + " INTEGER NOT NULL," +
+                ID_TENDENCIA + " INTEGER NOT NULL," +
                 ID_SIMBOLO + " INTEGER NOT NULL" +
                 ");";
 
@@ -78,7 +96,7 @@ public class DataBaseHelper extends SQLiteOpenHelper {
 
     }
 
-    public boolean addOne(SimboloModel simboloModel){
+    public boolean addOneSimbolo(SimboloModel simboloModel){
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues cv = new ContentValues();
 
@@ -87,6 +105,25 @@ public class DataBaseHelper extends SQLiteOpenHelper {
         cv.put(DESCRIPCION_SIMBOLO,simboloModel.getDescripcionSimbolo());
 
         long insert = db.insert(SIMBOLO, null, cv);
+        if (insert == -1){
+            return false;
+        }
+        else {
+            return true;
+        }
+    }
+
+    //Añadir usuarios a la base de datos
+    public boolean addOneUsuario(Usuario usuario){
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues cv = new ContentValues();
+
+        cv.put(NOMBRE_USUARIO, usuario.getNombreUsuario());
+        cv.put(CORREO_ELECTRONICO, usuario.getCorreoElectronico());
+        cv.put(CONTRASENA,usuario.getContrasena());
+
+
+        long insert = db.insert(USUARIO, null, cv);
         if (insert == -1){
             return false;
         }

@@ -49,7 +49,7 @@ public class CrearSimboloActivity extends AppCompatActivity {
                 }
                 DataBaseHelper dataBaseHelper = new DataBaseHelper(CrearSimboloActivity.this);
 
-                boolean success = dataBaseHelper.addOne(simboloModel);
+                boolean success = dataBaseHelper.addOneSimbolo(simboloModel);
 
                 Toast.makeText(CrearSimboloActivity.this, "Success", Toast.LENGTH_SHORT).show();
             }
