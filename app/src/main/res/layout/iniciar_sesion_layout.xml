@@ -22,6 +22,7 @@
 
     <!-- Agrega un EditText para el nombre de usuario -->
     <EditText
+        android:id="@+id/iniciarSesion_nombreUsuario"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="Nombre de usuario"
@@ -38,6 +39,7 @@
 
     <!-- Agrega un EditText para la contraseña -->
     <EditText
+        android:id="@+id/iniciarSesion_contrasena"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="Contraseña"
@@ -63,33 +65,12 @@
         android:textSize="25sp"
         app:cornerRadius="30dp"
         android:textStyle="bold"
-        android:layout_gravity="center" />
+        android:layout_gravity="center"
+        android:onClick="iniciarSesion"/>
 
 
     <Space
         android:layout_width="match_parent"
         android:layout_height="200dp" />
-
-    <!-- Texto "¿No tienes una cuenta?" -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="¿No tienes una cuenta?"
-        android:textColor="#FFFFFF"
-        android:textSize="18sp" />
-
-    <!-- Botón "Registrarse" -->
-    <Button
-        android:id="@+id/button_irRegistrarse2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="  Registrarse  "
-        android:backgroundTint="#FFA500"
-        android:textColor="#000000"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        app:cornerRadius="30dp"
-        android:layout_gravity="center"
-        android:onClick="lanzarVistaRegistrarse"/>
 
 </LinearLayout>

@@ -1,6 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -43,6 +45,17 @@
         <activity android:name=".activities.PublicacionesFiltrarActivity" />
 
         <!-- Menu Enciclopedia -->
+        <activity android:name=".activities.EnciclopediaSimbolosActivity" />
+        <activity android:name=".activities.ItemSimboloDetalleActivity" />
+        <activity android:name=".activities.EnciclopediaIndicadoresActivity" />
+        <activity android:name=".activities.EnciclopediaTendenciasActivity" />
+        <activity android:name=".activities.ItemTendenciaDetalleActivity" />
+        <activity android:name=".activities.EnciclopediaAgregarElementoActivity" />
+
+        <!-- Menu Enciclopedia Agregar Elementos -->
+        <activity android:name=".activities.EnciclopediaAgregarElementoSimboloActivity" />
+        <activity android:name=".activities.EnciclopediaAgregarElementoIndicadorActivity" />
+
 
         <!-- <activity android:name="" /> -->
 

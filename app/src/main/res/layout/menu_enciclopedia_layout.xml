@@ -32,16 +32,17 @@
 
         <!-- Primer botón con fondo personalizado -->
         <Button
-            android:id="@+id/button_irSectores"
+            android:id="@+id/button_irSimbolos"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="         Sectores         "
+            android:text="         SIMBOLOS         "
             android:backgroundTint="#FFA500"
             android:textColor="#000000"
             android:textSize="25sp"
             app:cornerRadius="30dp"
             android:textStyle="bold"
-            android:layout_gravity="center" />
+            android:layout_gravity="center"
+            android:onClick="lanzarVistaEnciclopediaSimbolos"/>
 
         <Space
             android:layout_width="match_parent"
@@ -57,7 +58,8 @@
             android:textSize="25sp"
             android:textStyle="bold"
             app:cornerRadius="30dp"
-            android:layout_gravity="center" />
+            android:layout_gravity="center"
+            android:onClick="lanzarVistaEnciclopediaIndicadores"/>/>
 
         <Space
             android:layout_width="match_parent"
@@ -73,23 +75,26 @@
             android:textSize="25sp"
             app:cornerRadius="30dp"
             android:textStyle="bold"
-            android:layout_gravity="center" />
+            android:layout_gravity="center"
+            android:onClick="lanzarVistaEnciclopediaTendencias"/>/>
 
         <Space
             android:layout_width="match_parent"
             android:layout_height="20dp" />
 
         <Button
-            android:id="@+id/button_irAgregarElementos"
+            android:id="@+id/button_irAgregarElemento"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Agregar Elementos"
+            android:text="Agregar Elemento"
             android:backgroundTint="#FFA500"
             android:textColor="#000000"
             android:textSize="25sp"
             app:cornerRadius="30dp"
             android:textStyle="bold"
-            android:layout_gravity="center" />
+            android:layout_gravity="center"
+            android:onClick="lanzarVistaEnciclopediaAgregarElemento" />
+
 
     </LinearLayout>
 

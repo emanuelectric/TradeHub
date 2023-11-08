@@ -61,19 +61,6 @@
             android:layout_width="match_parent"
             android:layout_height="100dp" />
 
-        <Button
-            android:id="@+id/button_irMenuPrueba"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="  Menu  "
-            android:backgroundTint="#FFA500"
-            android:textColor="#000000"
-            android:textSize="25sp"
-            app:cornerRadius="30dp"
-            android:textStyle="bold"
-            android:layout_gravity="center"
-            android:onClick="lanzarVistaMenuPrincipal"/>
-
 
     </LinearLayout>
 
