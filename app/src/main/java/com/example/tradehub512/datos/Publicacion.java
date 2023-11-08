@@ -4,7 +4,6 @@ public class Publicacion {
     // Atributos
     private int id;
     private int idUsuario;
-    private String fechaPublicacion;
     private int idSimbolo;
     private int idTendencia;
     private int idIndicador;
@@ -13,9 +12,8 @@ public class Publicacion {
     private int favorito;
 
     // Constructor
-    public Publicacion(int id, int idUsuario, String fechaPublicacion, int idSimbolo, int idTendencia, int idIndicador, String descripcion, String imagenAdjunta, int favorito) {
+    public Publicacion(int id, int idUsuario, int idSimbolo, int idTendencia, int idIndicador, String descripcion, String imagenAdjunta, int favorito) {
         this.idUsuario = idUsuario;
-        this.fechaPublicacion = fechaPublicacion;
         this.idSimbolo = idSimbolo;
         this.idTendencia = idTendencia;
         this.idIndicador = idIndicador;
@@ -37,16 +35,6 @@ public class Publicacion {
     // Setter para el ID del usuario
     public void setIdUsuario(int idUsuario) {
         this.idUsuario = idUsuario;
-    }
-
-    // Getter para la fecha de publicación
-    public String getFechaPublicacion() {
-        return fechaPublicacion;
-    }
-
-    // Setter para la fecha de publicación
-    public void setFechaPublicacion(String fechaPublicacion) {
-        this.fechaPublicacion = fechaPublicacion;
     }
 
     // Getter para el ID del símbolo

@@ -15,6 +15,8 @@ public class DataBaseHelper extends SQLiteOpenHelper {
     public static final String NOMBRE_SIMBOLO = "nombre_simbolo";
     public static final String DESCRIPCION_SIMBOLO = "descripcion_simbolo";
     public static final String SIMBOLO = "Simbolo";
+    public static final String ID_USUARIO = "id_usuario";
+    public static final String NOMBRE_USUARIO = "nombre_usuario";
 
     public DataBaseHelper(@Nullable Context context) {
         super(context, "tradehub.db", null, 1);
@@ -46,8 +48,8 @@ public class DataBaseHelper extends SQLiteOpenHelper {
 
         // Declaración SQL para crear la tabla Usuario
         String createTableUsuario = "CREATE TABLE Usuario (" +
-                "id_usuario INTEGER PRIMARY KEY AUTOINCREMENT," +
-                "nombre_usuario VARCHAR NOT NULL," +
+                ID_USUARIO + " INTEGER PRIMARY KEY AUTOINCREMENT," +
+                NOMBRE_USUARIO + " VARCHAR NOT NULL," +
                 "correo_electronico VARCHAR NOT NULL," +
                 "contrasena VARCHAR NOT NULL" +
                 ");";
@@ -59,7 +61,7 @@ public class DataBaseHelper extends SQLiteOpenHelper {
                 "descripcion_piublicacion VARCHAR NOT NULL," +
                 "imagen_publicacion BLOB," +
                 "publicacion_favorito BOOLEAN NOT NULL," +
-                "id_usuario INTEGER NOT NULL," +
+                ID_USUARIO + " INTEGER NOT NULL," +
                 "id_indicador INTEGER NOT NULL," +
                 "id_tendencia INTEGER NOT NULL," +
                 ID_SIMBOLO + " INTEGER NOT NULL" +

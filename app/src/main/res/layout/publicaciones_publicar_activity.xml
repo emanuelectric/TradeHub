@@ -18,7 +18,7 @@
         android:textColor="#FFFFFF"
         android:textStyle="bold"
         android:gravity="center"
-        android:layout_marginBottom="16dp" />
+        android:layout_marginBottom="10dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -92,7 +92,7 @@
         android:layout_width="253dp"
         android:layout_height="88dp"
         android:layout_gravity="center"
-        android:src="@drawable/tradehub"
+        android:src="@drawable/backgroundImage"
         android:adjustViewBounds="true"
         android:scaleType="fitCenter" />
 

@@ -48,6 +48,7 @@
         <activity android:name=".activities.EnciclopediaSimbolosActivity" />
         <activity android:name=".activities.ItemSimboloDetalleActivity" />
         <activity android:name=".activities.EnciclopediaIndicadoresActivity" />
+        <activity android:name=".activities.ItemIndicadorDetalleActivity" />
         <activity android:name=".activities.EnciclopediaTendenciasActivity" />
         <activity android:name=".activities.ItemTendenciaDetalleActivity" />
         <activity android:name=".activities.EnciclopediaAgregarElementoActivity" />
