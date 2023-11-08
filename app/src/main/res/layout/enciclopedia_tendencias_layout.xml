@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/textview_EnciclopediaTendencias"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tendencias"
+        android:textSize="40sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="100dp" />
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <!-- Agrega el RecyclerView aquí -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_tendencias"
+        android:layout_width="300dp"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
