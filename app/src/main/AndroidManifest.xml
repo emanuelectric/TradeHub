@@ -18,7 +18,7 @@
 
         <!-- Actividad principal al iniciar -->
         <activity
-            android:name=".activities.MainActivity"
+            android:name=".activities.CrearSimboloActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

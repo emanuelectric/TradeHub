@@ -2,6 +2,22 @@ package com.example.tradehub512.datos;
 
 import java.util.ArrayList;
 public class Usuario {
+    @Override
+    public String toString() {
+        return "Usuario{" +
+                "idUsuario=" + idUsuario +
+                ", nombreUsuario='" + nombreUsuario + '\'' +
+                ", correoElectronico='" + correoElectronico + '\'' +
+                ", contrasena='" + contrasena + '\'' +
+                ", publicacionesFavoritas=" + publicacionesFavoritas +
+                '}';
+    }
+
+    public Usuario(){
+
+
+    }
+
     // Atributos
     private int idUsuario;
     private String nombreUsuario;
