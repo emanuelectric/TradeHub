@@ -18,7 +18,7 @@
 
         <!-- Actividad principal al iniciar -->
         <activity
-            android:name=".activities.CrearSimboloActivity"
+            android:name=".activities.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -54,11 +54,15 @@
         <activity android:name=".activities.EnciclopediaAgregarElementoActivity" />
 
         <!-- Menu Enciclopedia Agregar Elementos -->
+        <activity android:name=".activities.CrearSimboloActivity" />
         <activity android:name=".activities.EnciclopediaAgregarElementoSimboloActivity" />
         <activity android:name=".activities.EnciclopediaAgregarElementoIndicadorActivity" />
 
 
         <!-- <activity android:name="" /> -->
+
+        <activity android:name=".activities.FAQActivity" />
+
 
     </application>
 

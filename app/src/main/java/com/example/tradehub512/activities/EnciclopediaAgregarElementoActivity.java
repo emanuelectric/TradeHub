@@ -17,7 +17,7 @@ public class EnciclopediaAgregarElementoActivity extends AppCompatActivity {
 
     // Lanzar Vistas
     public void lanzarVistaEnciclopediaAgregarElementoSimbolo(View view) {
-        Intent intent = new Intent(this, EnciclopediaAgregarElementoSimboloActivity.class);
+        Intent intent = new Intent(this, CrearSimboloActivity.class);
         startActivity(intent);
     }
 

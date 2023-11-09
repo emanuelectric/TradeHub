@@ -27,7 +27,7 @@ public class MenuPrincipalActivity extends AppCompatActivity {
     }
 
     public void lanzarVistaAcercaDe(View view) {
-        Intent intent = new Intent(this, AcercaDeActivity.class);
+        Intent intent = new Intent(this, FAQActivity.class);
         startActivity(intent);
     }
 }

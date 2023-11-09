@@ -92,7 +92,7 @@
         android:layout_width="253dp"
         android:layout_height="88dp"
         android:layout_gravity="center"
-        android:src="@drawable/backgroundImage"
+        android:src="@drawable/backgroundimage"
         android:adjustViewBounds="true"
         android:scaleType="fitCenter" />
 

@@ -6,7 +6,7 @@
     android:layout_height="match_parent">
 
     <EditText
-        android:id="@+id/et_nameSimbolo"
+        android:id="@+id/edittext_simboloSimbolo"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -20,7 +20,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/et_nombre"
+        android:id="@+id/edittext_nombreSimbolo"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -31,10 +31,10 @@
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_nameSimbolo" />
+        app:layout_constraintTop_toBottomOf="@+id/edittext_simboloSimbolo" />
 
     <EditText
-        android:id="@+id/et_descripcionSimbolo"
+        android:id="@+id/edittext_descripcionSimbolo"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -45,24 +45,40 @@
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_nombre" />
+        app:layout_constraintTop_toBottomOf="@+id/edittext_nombreSimbolo" />
 
     <Button
         android:id="@+id/btn_agregar_simbolo"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="140dp"
+        android:layout_marginStart="240dp"
         android:layout_marginTop="32dp"
-        android:layout_marginEnd="140dp"
+        android:layout_marginEnd="60dp"
         android:text="Agregar"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_descripcionSimbolo" />
+        app:layout_constraintTop_toBottomOf="@+id/edittext_descripcionSimbolo" />
+
+    <Button
+        android:id="@+id/btn_viewAll"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="24dp"
+        android:text="View All"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/lv_simboloLista"
+        app:layout_constraintEnd_toStartOf="@+id/btn_agregar_simbolo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_agregar_simbolo"
+        tools:visibility="visible" />
 
     <ListView
         android:id="@+id/lv_simboloLista"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="364dp"
+        android:layout_height="388dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="24dp"
@@ -73,4 +89,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_agregar_simbolo"
         app:layout_constraintVertical_bias="0.0" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">TradeHub</string>
+
+    <string name="new1">TradeHub es una red social para trades</string>
+    <string name="new2">TIE 22</string>
+    <string name="new3">La idea de TradeHub comenzó el 30 de octubre de 2023</string>
+    <string name="new4">TradeHub fue fundado para cumplir con el proyecto del módulo gestión de proyectos TIC</string>
+    <string name="new5">Una amplia librería de conocimientos sobre el trading</string>
+    <string name="new6">Sí, hasta el momento</string>
+    <string name="new7">Hasta personalizado si se requiere</string>
+    <string name="new8">A partir de la idea se diseñó mediante Android Studio con el lenguaje java</string>
+    <string name="new9">El objetivo de la app consiste en poder almacenar y compartir contenido sobre trading entre usuarios</string>
+    <string name="new10">La misión es transmitir conocimiento sobre trading y en un futuro monetizarlo</string>
 </resources>
